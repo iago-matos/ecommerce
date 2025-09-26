@@ -1,0 +1,5 @@
+[
+  { "id": "pix", "label": "PIX" },
+  { "id": "credito", "label": "Cartão de Crédito" },
+  { "id": "debito", "label": "Cartão de Débito" }
+]

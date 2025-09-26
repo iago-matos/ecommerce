@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Essential Nutrition - Inspiração</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+		
+		
+</head>
+<body>
+	<header class="navbar">
+		<div class="logo">EN</div>
+		<nav>
+			<a href="#" onclick="showHome(event)">Produtos</a>
+			<a href="#">Nossa marca</a>
+			<a href="#">Lojas</a>
+			<a href="#">Blog</a>
+		</nav>
+		<input class="search" type="text" placeholder="O que você procura?">
+		<div style="position:relative;">
+			<span class="cart-icon" onclick="toggleCartDropdown()">
+				<i class="fa fa-shopping-cart"></i>
+				<span class="cart-count" id="cart-count">0</span>
+			</span>
+			<div class="cart-dropdown" id="cart-dropdown">
+				<ul id="cart-list"></ul>
+				<div class="cart-total" id="cart-total"></div>
+				<button class="checkout-btn" onclick="goToCheckout()">Finalizar compra</button>
+			</div>
+		</div>
+	</header>
+
+	<main id="main-content">
+		<section class="banner">
+			<div class="banner-content">
+				<div style="margin-bottom: 10px;">
+					<span style="font-size:2rem;">💪</span>
+				</div>
+				<div class="banner-title" style="color:#1787ff; font-size:2.1rem; line-height:1.2;">SUPLEMENTAÇÃO DE IMPACTO:<br>SUPOSITÓRIOS DE PROTEÍNA PARA ATLETAS</div>
+				<div class="banner-desc" style="margin-top:18px; font-size:1.1rem; color:#222;">
+					Você já tentou de tudo: shakes, cápsulas, barrinhas... Mas agora é hora de levar sua performance para um <b>novo nível</b> — de forma <b>mais rápida, eficiente e direta</b>.<br><br>
+					Apresentamos os <b>Supositórios de Proteína Anal-Bolic®</b>, a revolução na suplementação esportiva. Desenvolvidos para atletas que buscam <b>ganho de massa muscular acelerado</b>, nossos supositórios oferecem <b>absorção ultra-rápida</b>, com zero perda no trato digestivo.
+				</div>
+			</div>
+			<img class="banner-img" src="img/banner1.png" alt="Supositórios de Proteína Anal-Bolic®">
+		</section>
+
+		<div class="section-title" style="margin-top:32px;">🚀 Por que escolher supositórios de proteína?</div>
+		<div style="background:#f5fbff; border-radius:12px; margin:0 10vw 32px 10vw; padding:24px 32px; box-shadow:0 2px 8px rgba(0,0,0,0.03);">
+			<ul style="font-size:1.15rem; color:#222; list-style:none; padding:0; margin:0;">
+				<li style="margin-bottom:12px;"><span style="color:#1abc9c; font-size:1.3em;">✅</span> <b>Absorção Rápida</b> – A proteína é absorvida diretamente pela mucosa intestinal.</li>
+				<li style="margin-bottom:12px;"><span style="color:#1abc9c; font-size:1.3em;">✅</span> <b>Sem Desconforto Estomacal</b> – Adeus gases e inchaço!</li>
+				<li style="margin-bottom:12px;"><span style="color:#1abc9c; font-size:1.3em;">✅</span> <b>Liberação Gradual</b> – Níveis de aminoácidos estáveis por horas.</li>
+				<li style="margin-bottom:12px;"><span style="color:#1abc9c; font-size:1.3em;">✅</span> <b>Discreto e Eficaz</b> – Ideal para atletas sérios (e corajosos).</li>
+			</ul>
+		</div>
+		<section class="products" id="products-list">
+			<div class="product-card" data-id="1" data-title="Super Omega-3 TG | 180 caps" data-price="308" data-img="img/creatina.jpg">
+				<img class="product-img" src="img/creatina.jpg" alt="Super Omega-3 TG">
+				<div class="product-title">Super Omega-3 TG | 180 caps</div>
+				<div class="product-desc">Óleo de peixe concentrado em EPA e DHA | 1000mg</div>
+				<div class="product-price">R$ 308,00</div>
+				<button class="product-btn" onclick="addToCart(this)">Adicionar à sacola</button>
+			</div>
+			<div class="product-card" data-id="2" data-title="[Mg] Complex 90 caps | 30 doses" data-price="106" data-img="img/deflorador.jpg">
+				<img class="product-img" src="img/deflorador.jpg" alt="Mg Complex">
+				<div class="product-title">[Mg] Complex 90 caps | 30 doses</div>
+				<div class="product-desc">Blend em cápsulas com 4 fontes de magnésio</div>
+				<div class="product-price">R$ 106,00</div>
+				<button class="product-btn" onclick="addToCart(this)">Adicionar à sacola</button>
+			</div>
+			<div class="product-card" data-id="3" data-title="Crealift Lata 300g | 100 doses" data-price="357" data-img="img/extreme.jpg">
+				<img class="product-img" src="img/extreme.jpg" alt="Crealift">
+				<div class="product-title">Crealift Lata 300g | 100 doses</div>
+				<div class="product-desc">Creatina Mono-hidratada (Creapure®) | Sabor neutro</div>
+				<div class="product-price">R$ 357,00</div>
+				<button class="product-btn" onclick="addToCart(this)">Adicionar à sacola</button>
+			</div>
+			<div class="product-card" data-id="4" data-title="CoQ10 120 caps | 60 doses" data-price="298" data-img="img/deflorador.jpg">
+				<img class="product-img" src="img/deflorador.jpg" alt="CoQ10">
+				<div class="product-title">CoQ10 120 caps | 60 doses</div>
+				<div class="product-desc">Coenzima Q10 + Ômega-3 TG + Vitamina E</div>
+				<div class="product-price">R$ 298,00</div>
+				<button class="product-btn" onclick="addToCart(this)">Adicionar à sacola</button>
+			</div>
+		</section>
+	</main>
+	<section class="checkout-page" id="checkout-page">
+		<div class="checkout-title">Finalizar Compra</div>
+		<ul class="checkout-list" id="checkout-list"></ul>
+		<div class="cart-total" id="checkout-total"></div>
+		<div class="shipping-options">
+			<div style="margin-bottom:8px;font-weight:600;">Opções de envio:</div>
+			<label><input type="radio" name="shipping" value="PAC" checked> PAC (5-10 dias) - R$ 20,00</label>
+			<label><input type="radio" name="shipping" value="Sedex"> Sedex (1-3 dias) - R$ 40,00</label>
+			<label><input type="radio" name="shipping" value="Retirar"> Retirar na loja - Grátis</label>
+		</div>
+		<button class="back-btn" onclick="showHome(event)">Voltar</button>
+		<button class="finalize-btn" onclick="finalizeOrder()">Finalizar Pedido</button>
+		<div id="order-message" style="margin-top:18px;font-weight:600;color:#1a7c1a;"></div>
+	</section>
+</body>
+<script src="main.js"></script>
+
+</html>

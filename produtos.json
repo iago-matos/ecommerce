@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Super Omega-3 TG | 180 caps",
+    "desc": "Óleo de peixe concentrado em EPA e DHA | 1000mg",
+    "price": 308,
+    "img": "img/creatina.jpg"
+  },
+  {
+    "id": 2,
+    "title": "[Mg] Complex 90 caps | 30 doses",
+    "desc": "Blend em cápsulas com 4 fontes de magnésio",
+    "price": 106,
+    "img": "img/deflorador.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Crealift Lata 300g | 100 doses",
+    "desc": "Creatina Mono-hidratada (Creapure®) | Sabor neutro",
+    "price": 357,
+    "img": "img/extreme.jpg"
+  },
+  {
+    "id": 4,
+    "title": "CoQ10 120 caps | 60 doses",
+    "desc": "Coenzima Q10 + Ômega-3 TG + Vitamina E",
+    "price": 298,
+    "img": "img/deflorador.jpg"
+  }
+]
