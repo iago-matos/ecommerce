@@ -1,30 +1,31 @@
 [
   {
     "id": 1,
-    "title": "Super Omega-3 TG | 180 caps",
-    "desc": "Óleo de peixe concentrado em EPA e DHA | 1000mg",
+    "title": "New Creatine | 180 ",
+    "desc": "Concentrado em EPA e DHA | 1000mg",
     "price": 308,
     "img": "img/creatina.jpg"
   },
   {
     "id": 2,
-    "title": "[Mg] Complex 90 caps | 30 doses",
-    "desc": "Blend em cápsulas com 4 fontes de magnésio",
+    "title": "Deflorador Horse | Mais Volume",
+    "desc": "Blend fontes de magnésio",
     "price": 106,
     "img": "img/deflorador.jpg"
   },
   {
     "id": 3,
-    "title": "Crealift Lata 300g | 100 doses",
+    "title": "Extreme | 100% Eficácia",
     "desc": "Creatina Mono-hidratada (Creapure®) | Sabor neutro",
     "price": 357,
     "img": "img/extreme.jpg"
   },
   {
     "id": 4,
-    "title": "CoQ10 120 caps | 60 doses",
-    "desc": "Coenzima Q10 + Ômega-3 TG + Vitamina E",
+    "title": "Deflorador | 2 por 1",
+    "desc": "Absorção rápida",
     "price": 298,
     "img": "img/deflorador.jpg"
   }
 ]
+
